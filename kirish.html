@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kirish — SPORT SHOP</title>
+  <meta name="description" content="Boks, MMA, fitnes anjomlari va sport kiyimlari bir joyda.">
+  <meta name="theme-color" content="#0B0B0C">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Oswald:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="auth">
+  <section class="auth-side">
+    <a class="logo" href="index.html">SPORT<span>/</span>SHOP</a>
+    <div>
+      <blockquote>Sport — <span class="stroke">bu hayot tarzi!</span></blockquote>
+      <p>Ro'yxatdan o'ting — 40+ sport mahsuloti, sevimlilar va tezkor buyurtma sizni kutmoqda.</p>
+    </div>
+  </section>
+
+  <section class="auth-main">
+    <div class="auth-top">
+      <details class="lang">
+        <summary aria-label="Tilni tanlash"><svg class="globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>UZ<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+        <ul>
+        <li><a href="kirish.html" lang="uz" hreflang="uz" aria-current="true">O'zbekcha <small>UZ</small></a></li>
+        <li><a href="ru/kirish.html" lang="ru" hreflang="ru">Русский <small>RU</small></a></li>
+        <li><a href="en/kirish.html" lang="en" hreflang="en">English <small>EN</small></a></li>
+        </ul>
+      </details>
+      <a class="guest" href="index.html">Mehmon sifatida kirish <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+
+    <div class="auth-box">
+      <h1>Sport olamiga xush kelibsiz!</h1>
+      <p>Hisob yarating yoki o'z akkauntingizga kiring.</p>
+
+      <div class="tabs" role="radiogroup" aria-label="Forma turi">
+        <input type="radio" name="tab" id="t-reg" checked>
+        <label for="t-reg">Ro'yxatdan o'tish</label>
+        <input type="radio" name="tab" id="t-login">
+        <label for="t-login">Kirish</label>
+      </div>
+
+      <form class="panel p-reg" action="index.html" method="get">
+        <div class="field">
+          <label for="r-email">Email manzil</label>
+          <input id="r-email" type="email" placeholder="example@gmail.com" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="r-pass">Parol</label>
+          <input id="r-pass" type="password" placeholder="Kamida 6 ta belgi" minlength="6" autocomplete="new-password" required>
+          <span class="hint">Parol kamida 6 ta belgidan iborat bo'lsin.</span>
+        </div>
+        <div class="field">
+          <label for="r-pass2">Parolni tasdiqlang</label>
+          <input id="r-pass2" type="password" placeholder="Parolni qayta kiriting" minlength="6" autocomplete="new-password" required>
+        </div>
+        <button class="btn btn-red" type="submit">Ro'yxatdan o'tish <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      </form>
+
+      <form class="panel p-login" action="index.html" method="get">
+        <div class="field">
+          <label for="l-email">Email manzil</label>
+          <input id="l-email" type="email" placeholder="example@gmail.com" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="l-pass">Parol</label>
+          <input id="l-pass" type="password" placeholder="Kamida 6 ta belgi" minlength="6" autocomplete="current-password" required>
+        </div>
+        <label class="check"><input type="checkbox"> Meni eslab qol</label>
+        <button class="btn btn-red" type="submit">Saytga kirish <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      </form>
+    </div>
+  </section>
+</main>
+</body>
+</html>

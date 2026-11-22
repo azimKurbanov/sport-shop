@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign in — SPORT SHOP</title>
+  <meta name="description" content="Boxing, MMA and fitness gear plus sportswear in one place.">
+  <meta name="theme-color" content="#0B0B0C">
+  <link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Oswald:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<main class="auth">
+  <section class="auth-side">
+    <a class="logo" href="index.html">SPORT<span>/</span>SHOP</a>
+    <div>
+      <blockquote>Sport is <span class="stroke">a lifestyle!</span></blockquote>
+      <p>Create an account — 40+ sports products, favourites and quick ordering are waiting.</p>
+    </div>
+  </section>
+
+  <section class="auth-main">
+    <div class="auth-top">
+      <details class="lang">
+        <summary aria-label="Choose language"><svg class="globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>EN<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+        <ul>
+        <li><a href="../kirish.html" lang="uz" hreflang="uz">O'zbekcha <small>UZ</small></a></li>
+        <li><a href="../ru/kirish.html" lang="ru" hreflang="ru">Русский <small>RU</small></a></li>
+        <li><a href="../en/kirish.html" lang="en" hreflang="en" aria-current="true">English <small>EN</small></a></li>
+        </ul>
+      </details>
+      <a class="guest" href="index.html">Continue as guest <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+
+    <div class="auth-box">
+      <h1>Welcome to the world of sport!</h1>
+      <p>Create an account or sign in to yours.</p>
+
+      <div class="tabs" role="radiogroup" aria-label="Form type">
+        <input type="radio" name="tab" id="t-reg" checked>
+        <label for="t-reg">Sign up</label>
+        <input type="radio" name="tab" id="t-login">
+        <label for="t-login">Sign in</label>
+      </div>
+
+      <form class="panel p-reg" action="index.html" method="get">
+        <div class="field">
+          <label for="r-email">Email address</label>
+          <input id="r-email" type="email" placeholder="example@gmail.com" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="r-pass">Password</label>
+          <input id="r-pass" type="password" placeholder="At least 6 characters" minlength="6" autocomplete="new-password" required>
+          <span class="hint">Password must be at least 6 characters.</span>
+        </div>
+        <div class="field">
+          <label for="r-pass2">Confirm password</label>
+          <input id="r-pass2" type="password" placeholder="Repeat your password" minlength="6" autocomplete="new-password" required>
+        </div>
+        <button class="btn btn-red" type="submit">Create account <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      </form>
+
+      <form class="panel p-login" action="index.html" method="get">
+        <div class="field">
+          <label for="l-email">Email address</label>
+          <input id="l-email" type="email" placeholder="example@gmail.com" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="l-pass">Password</label>
+          <input id="l-pass" type="password" placeholder="At least 6 characters" minlength="6" autocomplete="current-password" required>
+        </div>
+        <label class="check"><input type="checkbox"> Remember me</label>
+        <button class="btn btn-red" type="submit">Sign in <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      </form>
+    </div>
+  </section>
+</main>
+</body>
+</html>
